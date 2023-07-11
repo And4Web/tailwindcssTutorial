@@ -8,6 +8,7 @@
     <style>
       .box{
         border: 2px solid black;
+        display: inline-block;
       }
       a{
         text-decoration: underline;
@@ -17,9 +18,10 @@
     </style>
   </head>
   <body>
-    <h1 class="text-4xl font-bold shadow-md bg-blue-500 text-white">
-      Hello Tailwind!
+    <h1 class="text-4xl font-bold shadow-xl bg-blue-500 text-white text-center p-1 mb-2">
+      &#128525 Hello Tailwind! &#128525
     </h1>
+
     <!-- Height and Width -->
     <div class="height-and-width">
       <h1 class="text-2xl bg-pink-500 text-green-300">1. Height and width</h1>
@@ -31,20 +33,102 @@
         <div class="box  h-32 w-full bg-green-500 text-white">h-32 w-full</div>
         <div class="box  h-vh w-2/3 bg-red-500 text-white">h-vh w-2/3</div>
       </div>
-      <p class="p-2">For more Height and Width Properties refer official docs: <a href="https://tailwindcss.com/docs/width" target=”_blank”>Tailwind Sizing: Heights and Widths</a></p>
+      <p class="p-2">For more Height and Width Properties, refer official docs: <a href="https://tailwindcss.com/docs/width" target=”_blank”>Tailwind Sizing: Heights and Widths</a></p>
     </div>
+
     <!-- Borders and Colors -->
     <div class="border-and-colors">
       <h1 class="text-2xl bg-pink-500 text-green-300">2. Border and Colors</h1>
       <p class="p-2">Border and Colors properties can be used in Tailwind CSS something like this:</p>
       <div class="flex justify-center">
         <div class="h-32 w-32 m-1 bg-blue-500 border-2 border-purple-900 rounded text-white">border-2 border-purple-900 rounded</div>
-        <div class="h-32 w-32 m-1 bg-green-700 border-4 border-yellow-500 rounded-lg text-white">border-4 border-yellow-500 rounded-lg</div>
-        <div class="h-32 w-32 m-1 bg-red-500 border-8 border-blue-500 text-white">border-8 border-blue-500</div>
-        <div class="h-32 w-32 m-1 bg-yellow-500 border-b-4 border-t-4 border-green-500 rounded-md text-white">border-b-4 border-t-4 border-green-500 rounded-md</div>
+        <div class="h-32 w-32 m-1 bg-green-700 border-4 border-double border-yellow-500 rounded-lg text-white">border-4 border-double border-yellow-500 rounded-lg</div>
+        <div class="h-32 w-32 m-1 bg-red-500 border-8 border-dotted border-blue-500 text-white">border-8 border-dotted border-blue-500</div>
+        <div class="h-32 w-32 m-1 bg-yellow-500 border-b-4 border-t-4 border-green-500 rounded-b-full text-white">border-b-4 border-t-4 border-green-500 rounded-b-full</div>
+        <div class="h-32 w-32 m-1 bg-pink-500 border-4  border-blue-500 rounded-full text-white">border-b-4 border-t-4 border-green-500 rounded-full</div>
+        <div class="h-32 w-32 m-1 bg-blue-300 border-4  border-blue-500 rounded-tr-xl rounded-bl-lg border-dashed text-black">border-4 border-dashed  border-blue-500 rounded-tr-xl rounded-bl-lg</div>
       </div>
-      <p class="p-2">For more border and Colors Properties refer official docs: <a href="https://tailwindcss.com/docs/border-radius" target=”_blank”>Tailwind Borders</a> <span class=" text-blue-700 text-2xl">></span>
+      <p class="p-2">For more border and Colors Properties, refer official docs: <a href="https://tailwindcss.com/docs/border-radius" target=”_blank”>Tailwind Borders</a> <span class=" text-blue-700 text-2xl">></span>
         <a href="https://tailwindcss.com/docs/customizing-colors" target=”_blank”>Tailwind Colors</a></p>
     </div>
+
+    <!-- Margins and Paddings -->
+
+    <div class="margins-and-paddings">
+      <h1 class="text-2xl bg-pink-500 text-green-300">3. Margins and Paddings</h1>
+      <p class="p-2">Margins and Paddings properties can be used in Tailwind CSS something like this:</p>
+      <div class="flex justify-content space-x-4">
+        <div class="h-32 w-32 border m-3 p-4 border-black rounded-lg"> mt-3 p-4</div>
+        <div class="h-32 w-32 border mt-3 pt-4 border-black rounded-lg">mt-3 pt-4</div>
+        <div class="h-32 w-32 border mb-3 pb-4 border-black rounded-lg">mb-3 pb-4</div>
+        <div class="h-32 w-32 border my-3 pl-7 border-black rounded-lg">my-3 pl-7</div>
+        <div class="h-32 w-32 border mx-3 pr-7 border-black rounded-lg">mx-3 pr-7</div>
+       
+      </div>
+      <p class="p-2">For more Margin, Padding and space-between Properties, refer official docs: <a href="https://tailwindcss.com/docs/margin" target=”_blank”>Tailwind Margin</a> <span class=" text-blue-700 text-2xl">></span>
+        <a href="https://tailwindcss.com/docs/padding" target=”_blank”>Tailwind Padding</a> <span class=" text-blue-700 text-2xl">></span>
+        <a href="https://tailwindcss.com/docs/space" target=”_blank”>Tailwind Space Between</a>
+      </p>
+    </div>
+
+    <!-- Flexbox -->
+    <div class="flexbox">
+      <h1 class="text-2xl bg-pink-500 text-green-300">4. Flexbox</h1>
+      <p class="p-2">Flexbox properties can be used in Tailwind CSS something like this:</p>
+
+      <div class="w-96 h-96 border border-black m-6 space-x-2 p-2">
+        <div class="w-42 h-20 flex border border-black m-2">
+          <p>flex:</p><br>
+          <div class="h-8 w-12 box border border-black">Box-1</div>
+          <div class="h-8 w-12 box border border-black">Box-2</div>
+          <div class="flex-shrink box border border-black">Box-3: flex-shrink</div>
+          <div class="h-8 w-12 box border border-black">Box-4</div>
+        </div>
+        <div class="w-42 h-20 flex justify-center align-baseline flex-wrap border border-black m-2">
+          <p>flex justify-center align-baseline flex-wrap:</p><br>
+          <div class="h-8 w-12 box border border-black">Box-1</div>
+          <div class="h-8 w-12 box border border-black">Box-2</div>
+          <div class="flex-grow h-8 w-12 box border border-black">Box-3: flex-grow</div>
+          <div class="h-8 w-12 box border border-black">Box-4</div>
+        </div>
+        <div class="w-42 h-20 flex flex-col border border-black m-2">
+          <p>flex flex-col:</p>
+          <div class="h-4 w-12 box border border-black">Box-1</div>
+          <div class="h-4 w-12 box border border-black">Box-2</div>
+          <div class="h-4 w-12 box border border-black">Box-3</div>
+          <div class="h-4 w-12 box border border-black">Box-4</div>
+        </div>
+      </div>
+      <p class="p-2">For more Flexbox Properties, refer official docs: <a href="https://tailwindcss.com/docs/flex" target=”_blank”>Tailwind Flex</a>
+      </p>
+    </div>
+    <!-- Box Alignment -->
+
+    <div class="box-alignment">
+      <h1 class="text-2xl bg-pink-500 text-green-300">5. Box-alignment</h1>
+      <p class="p-2">2 of the most important Box alignment properties of flexbox: justify-content and align-item can be used in Tailwind CSS something like this:</p>
+    </div>
+
+    <!-- Typography -->
+
+    <!-- Box Shadow and Opacity -->
+
+    <!-- Hover Effect -->
+
+    <!-- Transition Properties -->
+
+    <!-- Default Animations of TailwindCSS -->
+
+    <!-- Containers -->
+
+    <!-- Transform and It's Properties -->
+
+    <!-- Background Properties -->
+
+    <!-- Grid System -->
+
+    <!-- Responsive Designing with TailwindCSS -->
+
+    <!-- Customization -->
   </body>
 </html>
